@@ -934,21 +934,16 @@ const schema = {
     color: var(--fg-soft);
   }
 
+  /* The heading says what the platform does, so it runs to two lines; balance keeps them even. */
   .case h3 {
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-size: clamp(1.5rem, 2.6vw, 2.25rem);
     line-height: 1.08;
     letter-spacing: -0.015em;
+    text-wrap: balance;
   }
 
   .case--lead h3 {
-    font-size: clamp(1.625rem, 3.6vw, 3rem);
-  }
-
-  /* A taller hit area for the product links without moving the heading. */
-  .case h3 a {
-    display: inline-block;
-    padding-block: 0.4rem;
-    margin-block: -0.4rem;
+    font-size: clamp(1.625rem, 3vw, 2.625rem);
   }
 
   .case-text {
@@ -1877,8 +1872,8 @@ const schema = {
       <ul class="cases" id="cases" tabindex="0" aria-label="Wat we bouwden. Scroll opzij voor meer.">
         <li class="case case--lead ground-grove">
           <div>
-            <p class="case-when">Sinds 2019 · kinderopvang</p>
-            <h3><a href="https://opvang.vlaanderen" rel="noopener">Opvang.Vlaanderen</a></h3>
+            <p class="case-when"><a href="https://opvang.vlaanderen" rel="noopener">Opvang.Vlaanderen</a> · sinds 2019</p>
+            <h3>Eén aanmeldpunt voor kinderopvang</h3>
             <p class="case-text">Anton richtte eerder Opvang.Vlaanderen op. Hij overtuigde meer dan 200 lokale besturen om samen één platform te delen in plaats van elk apart het wiel opnieuw uit te vinden. Met een prijsmodel waar de breedste schouders de grootste last dragen.</p>
             <p class="case-note">Een gebruikersraad beslist mee.</p>
           </div>
@@ -1894,9 +1889,9 @@ const schema = {
         {metNico && (
         <li class="case case--mid ground-meadow">
           <div>
-            <p class="case-when">Sinds 2018 · cultuur</p>
-            <h3><a href="https://schoolpodium.be" rel="noopener">Schoolpodium</a></h3>
-            <p class="case-text">Schoolprogrammatoren van culturele centra plannen er hun schoolvoorstellingen, volgen inschrijvingen van leerkrachten op en sturen evaluaties. Nico bouwde het samen met de centra en onderhoudt het sindsdien als een goede huisvader.</p>
+            <p class="case-when"><a href="https://schoolpodium.be" rel="noopener">Schoolpodium</a> · sinds 2018</p>
+            <h3>Beheer van schoolvoorstellingen</h3>
+            <p class="case-text">Nico bouwde Schoolpodium samen met de culturele centra en onderhoudt het sindsdien als een goede huisvader. Schoolprogrammatoren plannen er hun schoolvoorstellingen, volgen inschrijvingen van leerkrachten op en sturen evaluaties.</p>
             <p class="case-note">Samen 1.140 schoolactiviteiten dit schooljaar.</p>
           </div>
           <p class="case-impact"><span class="fig">26</span> <span class="fig-label">culturele centra</span></p>
@@ -1913,17 +1908,17 @@ const schema = {
         )}
         <li class="case case--mid ground-dawn">
           <div>
-            <p class="case-when">Sinds 2020 · woonzorg</p>
-            <h3><a href="https://hartverwarmers.be" rel="noopener">Hartverwarmers</a></h3>
-            <p class="case-text">Gelanceerd in de eerste dagen van covid voor de woonzorgsector. Uitgegroeid tot een inspiratiebron voor animatoren, met een boek erbij.</p>
+            <p class="case-when"><a href="https://hartverwarmers.be" rel="noopener">Hartverwarmers</a> · sinds 2020</p>
+            <h3>Inspiratie voor animatoren in woonzorg</h3>
+            <p class="case-text">Frederik lanceerde Hartverwarmers in de eerste dagen van covid, voor de woonzorgsector. Het groeide uit tot een inspiratiebron voor animatoren, met een boek erbij.</p>
           </div>
           <p class="case-impact"><span class="fig">2.200</span> <span class="fig-label">actieve gebruikers per maand</span></p>
         </li>
         <li class="case case--small ground-forest">
           <div>
-            <p class="case-when">Sinds 2009 · communicatie</p>
-            <h3><a href="https://www.prezly.com" rel="noopener">Prezly</a></h3>
-            <p class="case-text">Communicatiesoftware die Frederik mee oprichtte. Geen sociale sector, wel de plek waar hij leerde een product uit te bouwen dat honderden organisaties elke dag gebruiken.</p>
+            <p class="case-when"><a href="https://www.prezly.com" rel="noopener">Prezly</a> · sinds 2009</p>
+            <h3>Software voor perscommunicatie</h3>
+            <p class="case-text">Frederik richtte Prezly mee op. Geen sociale sector, wel de plek waar hij leerde een product uit te bouwen dat honderden organisaties elke dag gebruiken.</p>
           </div>
         </li>
         <li class="case case--next">
